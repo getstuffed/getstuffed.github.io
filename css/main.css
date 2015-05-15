@@ -168,6 +168,7 @@ a:hover {
 
 .about-testimonial-container {
     background-image: url(../img/gs-chorizo.jpg);
+    background-size: cover;
 }
 
 .about-quote-container {
