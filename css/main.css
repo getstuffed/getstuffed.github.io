@@ -73,11 +73,11 @@ fieldset {
 }
 
 /*
- * Allow only vertical resizing of textareas.
+ * Disallow vertical resizing of textareas.
  */
 
 textarea {
-    resize: vertical;
+    resize: none;
 }
 
 /* ==========================================================================
@@ -97,177 +97,327 @@ textarea {
 
 /* Generic */
 
+body {
+    background-image: url(../img/texturetastic_gray.png);
+    font-family: 'Hind', sans-serif;
+    text-align: center;
+}
+
 h1 {
-    color: rgb(57, 87, 101);
-    font-size: 2em;
-    font-weight: 200;
+    color: #314A56;
+    font-family: 'Raleway', sans-serif;
+    font-size: 3em;
+    font-weight: 800;
     margin: 0;
     margin-bottom: 1em;
+    text-transform: uppercase;
 }
 
 p {
-    color: rgb(57, 87, 101);
+    color: #000;
+    font-size: 1.2em;
 }
 
 a {
-    color: rgb(210, 35, 42);
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 a:hover {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
-.horizontal-gutter {
-    height: 4em;
+.horizontal-gutter-1x {
+    height: 5em;
 }
 
-.horizontal-gutter-large {
-    height: 8em;
+.horizontal-gutter-2x {
+    height: 10em;
 }
 
-/* Nav section */
-
-.nav-container {
-    background-image: url(../img/gs-chorizo.jpg);
-    background-size: cover;
+.horizontal-gutter-3x {
+    height: 15em;
 }
 
-.nav h2 {
-    font-size: 1.4em;
-    margin: 0;
-    text-align: center;
-    color: rgb(144, 165, 177);
-    margin-top: 0.6em;
+.cta-primary {
+    background-color: rgb(210, 35, 42);
+    color: #FFF;
     cursor: pointer;
     transition-duration: 0.2s;
 }
 
-.nav h2:hover {
-    color: rgb(210, 35, 42);
+.cta-primary:hover {
+    background-color: rgb(234, 46, 53);
 }
 
-.nav-email h2 {
-    font-size: 1em;
-    font-weight: 400;
-    color: rgb(210, 35, 42);
-    margin-top: 2em;
+.navigation-item {
+    color: #D7E3E8;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0;
+    text-align: center;
+    transition-duration: 0.2s;
 }
 
-/* About section one */
-
-.about-one-container {
-    background-color: white;
+.navigation-item:hover {
+    color: #FFF;
 }
+
+/* Nav bar */
+
+.navigation-bar {
+    background-color: rgba(57, 87, 101, 0.6);
+    display: none;
+    height: 3em;
+    line-height: 3em;
+    position: fixed;
+    text-align: left;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navigation-logo {
+    height: 100%;
+}
+
+.navigation-logo img {
+    height: 60%;
+    width: auto;
+}
+
+.navigation-items-container {
+    padding: 0;
+}
+
+
+/* Landing section */
+
+.landing-container .about-quote-copy {
+    font-size: 3em;
+}
+
+.landing-container .about-quote-client {
+    font-size: 1.5em;
+    margin-top: 0em;
+}
+
+.landing-container .navigation-item {
+    font-size: 1.4em;
+    margin: 0;
+    text-align: center;
+    color: #395765;
+    margin-top: 1em;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.landing-container .cta-primary {
+    border-radius: 0.2em;
+    height: 2em;
+    line-height: 2em;
+}
+
+.landing-container .navigation-item:hover {
+    color: #74AFCA;
+}
+
+/* Hello section */
 
 .about-copy-names {
+    color: #314A56;
     font-weight: 800;
-    font-size: 1em;
+    font-size: 1.6em;
     margin-top: 2em;
 }
 
+.about-hello-container a {
+    color: rgb(210, 35, 42);
+    transition-duration: 0.2s;
+}
+
+.about-hello-container a:hover {
+    color: rgb(234, 46, 53);
+}
+
+/* Testimonials container */
+
 .about-testimonial-container {
-    background-image: url(../img/gs-chorizo.jpg);
     background-size: cover;
 }
 
 .about-quote-container {
-    height: 5em;
-    margin-top: 2em;
+    margin-top: 4em;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
 }
 
 .about-quote-copy {
-    color: rgb(226, 245, 255);
+    color: #000;
     font-size: 1.6em;
     font-weight: 100;
     margin: 0;
 }
 
 .about-quote-client {
-    color: rgb(226, 245, 255);
+    color: #000;
     font-size: 1.2em;
-    font-weight: 400;
+    font-weight: 600;
     margin: 0;
-    margin-top: 0.4em;
-}
-
-/* About section two */
-
-.about-two-container {
-    background-color: white;
-}
-
-.fb-feed-container img {
-    width: 100%;
-}
-
-.insta-feed-container img {
-    width: 100%;
     margin-top: 0.4em;
 }
 
 /* Services */
 
-.services-container {
-    background-color: rgb(30 ,30 ,30);
-}
-
-.services-container h1 {
-    color: white;
-}
-
 .service {
     background-size: cover;
     background-position: center;
-    height: 16em;
+    border-radius: 0.3em;
+    -webkit-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.75);
+    margin-bottom: 4em;
+    padding: 0;
     position: relative;
+}
+
+.service-overlay {
+    border: 0.6em solid #FFF;
+    height: calc(100% - 2em);
+    margin: 1em;
 }
 
 .service h4 {
     bottom: 0.4em;
-    color: white;
+    color: #FFF;
     font-size: 2em;
     font-weight: 800;
-    position: absolute;
-    text-align: right;
+    margin-bottom: 2em;
+    margin-top: 1em;
+    text-align: center;
+    width: 100%;
 }
 
 .service-weddings {
-    background-image: url(../img/gs-weddings.jpg);
+    background-image: url(../img/gs-weddings.jpg); 
 }
 
 .service-private {
-    background-image: url(../img/gs-private.jpg);
+    background-image: url(../img/gs-private.jpg);     
 }
 
-.service-popups {
-    background-image: url(../img/gs-popups.jpg);
+.service-film {
+    background-image: url(../img/gs-tbird.jpg);     
 }
 
 .service-corp {
-    background-image: url(../img/gs-corp.jpg);
+    background-image: url(../img/gs-corp.jpg);     
 }
 
-/* Menus */
+.service-popups {
+    background-image: url(../img/gs-popups.jpg);     
+}
 
-.menu h3 {
-    font-size: 1.4em;
-    font-weight: 400;
-    text-align: left;
+.service-menu {
+    background-color: #FFF;
+    border-radius: 0.2em;
+    cursor: pointer;
+    display: inline-block;
+    height: 7em;
+    margin-bottom: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding-top: 0.4em;
+    transition-duration: 0.2s;
+    width: 5em;
+}
+
+.services-content-container .cta-primary {
+    height: 3em;
+    line-height: 3em;
+    margin: auto;
+    margin-bottom: 2em;
+    width: 40%;
+}
+
+/* Latest and gallery section */
+
+.about-latest-container {
+}
+
+.fb-feed-container {
+    max-width: 100%;
+}
+
+.fb-page,
+.fb-page span,
+.fb-page span iframe {
+    width: 100% !important;
+    margin: auto;
+    max-width: 474px !important;
+}
+
+.fb-like-button,
+.insta-follow-button {
+    border-radius: 0.2em;
+    color: #FFF;
+    cursor: pointer;
+    height: 3em;
+    line-height: 3em;
+    margin: auto;
+    margin-top: 1em;
+    max-width: 474px;
+    transition-duration: 0.2s;
+    width: 100%;
+}
+
+.fa-thumbs-up,
+.fa-instagram {
+    margin-right: 0.4em;
+}
+
+.fb-like-button {
+    background-color: #415CA9;
+}
+
+.fb-like-button:hover {
+    background-color: #4765BA;
+}
+
+.insta-follow-button {
+    background-color: #517FA4;
+}
+
+.insta-follow-button:hover {
+    background-color: #5B8EB6;
+}
+
+#instafeed {
+    height: 600px;
+    margin: auto;
+    max-width: calc(474px + 0.8em);
+    overflow: auto;
+    width: calc(100% + 0.8em);
+}
+
+.instafeed-image-container {
+    border: 0.8em solid #FFF;
+    display: inline-block;
+    margin-bottom: 0.8em;
+    margin-left: 0.4em;
+    margin-right: 0.4em;
+    width: calc(50% - 0.8em);
+}
+
+.instafeed-image-container img {
+    height: auto;
+    width: 100%;
 }
 
 /* Footer */
 
 .footer {
-    background-color: rgb(30 ,30 ,30);
+    background-color: rgba(57, 87, 101, 0.6);
     color: white;
-    text-align: center;
 }
-
-
-
-
-
 
 /* ==========================================================================
    Helper classes
