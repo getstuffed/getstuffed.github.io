@@ -99,23 +99,25 @@ textarea {
 
 body {
     background-image: url(../img/texturetastic_gray.png);
-    font-family: 'Hind', sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
 }
 
 h1 {
     color: #314A56;
-    font-family: 'Raleway', sans-serif;
-    font-size: 3em;
+    font-family: 'Yeseva One', serif;
+    font-size: 5em;
     font-weight: 800;
     margin: 0;
-    margin-bottom: 1em;
-    text-transform: uppercase;
+    margin-bottom: 0.5em;
+    text-transform: lowercase;
 }
 
 p {
     color: #000;
-    font-size: 1.2em;
+    font-size: 1.6em;
+    margin: 0.8em auto;
+    max-width: 600px;
 }
 
 a {
@@ -124,6 +126,10 @@ a {
 
 a:hover {
     text-decoration: none !important;
+}
+
+.container-fluid {
+    overflow: hidden;
 }
 
 .horizontal-gutter-1x {
@@ -139,7 +145,7 @@ a:hover {
 }
 
 .cta-primary {
-    background-color: rgb(210, 35, 42);
+    background-color: #E32B32;
     color: #FFF;
     cursor: pointer;
     transition-duration: 0.2s;
@@ -153,6 +159,7 @@ a:hover {
     color: #D7E3E8;
     cursor: pointer;
     display: inline-block;
+    font-family: 'Yeseva One', serif;
     padding: 0;
     text-align: center;
     transition-duration: 0.2s;
@@ -201,7 +208,7 @@ a:hover {
 }
 
 .landing-container .navigation-item {
-    font-size: 1.4em;
+    font-size: 2.1em;
     margin: 0;
     text-align: center;
     color: #395765;
@@ -211,7 +218,7 @@ a:hover {
 }
 
 .landing-container .cta-primary {
-    border-radius: 0.2em;
+    border-radius: 0.1em;
     height: 2em;
     line-height: 2em;
 }
@@ -223,10 +230,10 @@ a:hover {
 /* Hello section */
 
 .about-copy-names {
-    color: #314A56;
-    font-weight: 800;
-    font-size: 1.6em;
-    margin-top: 2em;
+    color: #E32B32;
+    font-family: 'Yeseva One';
+    font-size: 3em;
+    margin-top: 0.5em;
 }
 
 .about-hello-container a {
@@ -238,6 +245,9 @@ a:hover {
     color: rgb(234, 46, 53);
 }
 
+.about-copy-container p {
+}
+
 /* Testimonials container */
 
 .about-testimonial-container {
@@ -245,24 +255,64 @@ a:hover {
 }
 
 .about-quote-container {
+    height: 20em;
     margin-top: 4em;
     padding-left: 0.4em;
     padding-right: 0.4em;
+    position: relative;
+}
+
+.about-quote-image-container,
+.about-quote-copy-container {
+    position: absolute;
+}
+
+.about-quote-image-container {
+    background-size: cover;
+    background-position: center;
+    border: 0.8em solid #FFF;
+    -webkit-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.75);
+    height: 20em;
+    left: 25%;
+    width: 20em;
+}
+
+.about-quote-copy-container {
+    background-color: #fff;
+    bottom: 2em;
+    -webkit-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.75);
+    font-size: 0.8em;
+    left: 45%;
+    padding: 2em;
+    text-align: left;
+    width: 25em;
 }
 
 .about-quote-copy {
-    color: #000;
-    font-size: 1.6em;
-    font-weight: 100;
+    border-left: 0.15em solid #395765;
+    border-right: 0.15em solid #395765;
+    color: #395765;
+    font-size: 2em;
+    font-weight: 500;
     margin: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-transform: uppercase;
+    width: 8em;
 }
 
 .about-quote-client {
-    color: #000;
-    font-size: 1.2em;
-    font-weight: 600;
+    color: #E32B32;
+    font-family: 'Yeseva One', serif;
+    font-size: 3em;
+    line-height: 0.8em;
     margin: 0;
     margin-top: 0.4em;
+    text-transform: lowercase;
 }
 
 /* Services */
@@ -274,7 +324,9 @@ a:hover {
     -webkit-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.75);
+    /*margin: auto;*/
     margin-bottom: 4em;
+    /*max-width: 600px;*/
     padding: 0;
     position: relative;
 }
@@ -418,6 +470,158 @@ a:hover {
     background-color: rgba(57, 87, 101, 0.6);
     color: white;
 }
+
+
+/* RESPONSIVE */ 
+
+/* md and up */
+
+@media screen and (min-width: 992px) {
+
+    .logo {
+        margin-top: 2em;
+    }
+
+    .about-quote-container-odd .about-quote-image-container {
+        left: -30px;
+    }
+
+    .about-quote-container-odd .about-quote-copy-container {
+        left: -170px;
+    }
+
+    .about-quote-container-even .about-quote-image-container {
+        left: 35px;
+    }
+
+    .about-quote-container-even .about-quote-copy-container {
+        left: 190px;
+    }
+
+}
+
+/* sm */
+
+@media screen and (max-width: 991px) {
+
+    .about-gallery-container {
+        margin-top: 12em;
+    }
+
+}
+
+/* xs */
+
+@media screen and (max-width: 767px) {
+
+    .about-quote-image-container {
+        left: 14%;
+    }
+
+    .about-quote-copy-container {
+        left: 45%;
+    }
+
+    .service {
+        width: 95%;
+        margin-left: 2.5%;
+    }
+
+    .services-content-container .cta-primary {
+        width: 89%;
+    }
+
+}
+
+/* xxs-xs */
+
+@media screen and (max-width: 600px) {
+
+    .about-quote-image-container {
+        left: 11%;
+    }
+
+    .about-quote-copy-container {
+        left: 37%;
+    }
+
+}
+
+/* xxs */
+
+@media screen and (max-width: 480px) {
+
+    .logo {
+        margin-top: 2em;
+    }
+
+    .about-quote-image-container {
+        height: 20em;
+        left: 8%;
+        width: 20em;
+    }
+
+    .about-quote-copy-container {
+        font-size: 0.6em;
+        left: 45%;
+    }
+
+    h1 {
+        font-size: 4em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    .about-copy-names {
+        font-size: 2.5em;
+        margin-top: 0.7em;
+    }
+
+    .about-gallery-container {
+        margin-top: 8em;
+    }
+
+}
+
+/* tn */
+
+@media screen and (max-width: 383px) {
+
+
+    .about-quote-image-container {
+        height: 15em;
+        left: 5%;
+        width: 15em;
+    }
+
+    .about-quote-copy-container {
+        font-size: 0.6em;
+        left: 29%;
+    }
+
+}
+
+/* nav bar peculiarities */
+
+@media screen and (max-width: 600px) {
+
+    .navigation-items-container .navigation-item {
+        font-size: 0.9em;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .navigation-items-container .navigation-item {
+        margin-top: -1px;
+    }
+
+}
+
+
 
 /* ==========================================================================
    Helper classes
