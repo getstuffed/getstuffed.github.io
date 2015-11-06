@@ -255,7 +255,7 @@ a:hover {
 }
 
 .about-quote-container {
-    height: 20em;
+    height: 22em;
     margin-top: 4em;
     padding-left: 0.4em;
     padding-right: 0.4em;
@@ -271,25 +271,24 @@ a:hover {
     background-size: cover;
     background-position: center;
     border: 0.8em solid #FFF;
+    border-radius: 50%;
     -webkit-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.75);
-    height: 20em;
-    left: 25%;
-    width: 20em;
+    height: 22em;
+    width: 22em;
 }
 
 .about-quote-copy-container {
     background-color: #fff;
-    bottom: 2em;
     -webkit-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.75);
-    font-size: 0.8em;
-    left: 45%;
+    font-size: 0.6em;
     padding: 2em;
     text-align: left;
-    width: 25em;
+    top: 25em;
+    width: 35em;
 }
 
 .about-quote-copy {
@@ -302,7 +301,7 @@ a:hover {
     padding-left: 1em;
     padding-right: 1em;
     text-transform: uppercase;
-    width: 8em;
+    width: 15em;
 }
 
 .about-quote-client {
@@ -474,6 +473,15 @@ a:hover {
 
 /* RESPONSIVE */ 
 
+/* make food images more dominant on larger screens*/
+
+@media screen and (min-width: 1220px) {
+    .about-quote-image-container {
+        height: 25em;
+        width: 25em;
+    }
+}
+
 /* md and up */
 
 @media screen and (min-width: 992px) {
@@ -482,20 +490,24 @@ a:hover {
         margin-top: 2em;
     }
 
+    .about-quote-container {
+        height: 28em;
+    }
+
     .about-quote-container-odd .about-quote-image-container {
-        left: -30px;
+        left: -55px;
     }
 
     .about-quote-container-odd .about-quote-copy-container {
-        left: -170px;
+        left: -220px;
     }
 
     .about-quote-container-even .about-quote-image-container {
-        left: 35px;
+        right: -55px;
     }
 
     .about-quote-container-even .about-quote-copy-container {
-        left: 190px;
+        right: -220px;
     }
 
 }
@@ -503,6 +515,14 @@ a:hover {
 /* sm */
 
 @media screen and (max-width: 991px) {
+
+    .about-quote-image-container {
+        left: calc(50% - 14em);
+    }
+
+    .about-quote-copy-container {
+        left: 50%;
+    }
 
     .about-gallery-container {
         margin-top: 12em;
