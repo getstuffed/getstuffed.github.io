@@ -50,9 +50,9 @@ $(function() {
 (function() {
   var feed = new Instafeed({
       get: 'user',
-      userId: 451652220,
-      accessToken: '451652220.467ede5.81672fbc05d54fd789c47d04fb0816fa',
-      clientId: 'b9b73a5961404f81b47e3dd4d1af2e19',
+      userId: 1449762964,
+      accessToken: '1449762964.923800a.0564e92ef3254313ad1c4f9d9c1f595e',
+      clientId: '923800aaa0324d0db76da21db084d5dc',
       template: '<div class="instafeed-image-container"><a href="{{link}}"><img src="{{image}}" /></a></div>',
       resolution: 'low_resolution',
       limit: 60

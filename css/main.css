@@ -255,7 +255,7 @@ a:hover {
 }
 
 .about-quote-container {
-    height: 20em;
+    height: 25em;
     margin-top: 4em;
     padding-left: 0.4em;
     padding-right: 0.4em;
@@ -271,25 +271,26 @@ a:hover {
     background-size: cover;
     background-position: center;
     border: 0.8em solid #FFF;
+    border-radius: 50%;
     -webkit-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.75);
-    height: 20em;
+    height: 23em;
     left: 25%;
-    width: 20em;
+    width: 23em;
 }
 
 .about-quote-copy-container {
-    background-color: #fff;
+    background-color: rgba(255,255,255,0.8);
     bottom: 2em;
     -webkit-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.75);
-    font-size: 0.8em;
+    font-size: 0.6em;
     left: 45%;
     padding: 2em;
     text-align: left;
-    width: 25em;
+    width: 35em;
 }
 
 .about-quote-copy {
@@ -302,7 +303,7 @@ a:hover {
     padding-left: 1em;
     padding-right: 1em;
     text-transform: uppercase;
-    width: 8em;
+    width: 15em;
 }
 
 .about-quote-client {
@@ -348,24 +349,16 @@ a:hover {
     width: 100%;
 }
 
-.service-weddings {
-    background-image: url(../img/gs-weddings.jpg); 
-}
-
-.service-private {
+.service-parties {
     background-image: url(../img/gs-private.jpg);     
-}
-
-.service-film {
-    background-image: url(../img/gs-tbird.jpg);     
-}
-
-.service-corp {
-    background-image: url(../img/gs-corp.jpg);     
 }
 
 .service-popups {
     background-image: url(../img/gs-popups.jpg);     
+}
+
+.service-catering {
+    background-image: url(../img/gs-corp.jpg);     
 }
 
 .service-menu {
@@ -483,19 +476,19 @@ a:hover {
     }
 
     .about-quote-container-odd .about-quote-image-container {
-        left: -30px;
+        left: -5%;
     }
 
     .about-quote-container-odd .about-quote-copy-container {
-        left: -170px;
+        left: -50%;
     }
 
     .about-quote-container-even .about-quote-image-container {
-        left: 35px;
+        right: -5%;
     }
 
     .about-quote-container-even .about-quote-copy-container {
-        left: 190px;
+        left: 70%;
     }
 
 }
@@ -504,7 +497,7 @@ a:hover {
 
 @media screen and (max-width: 991px) {
 
-    .about-gallery-container {
+    .about-gallery-container {s
         margin-top: 12em;
     }
 
