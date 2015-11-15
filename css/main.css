@@ -198,6 +198,13 @@ a:hover {
 
 /* Landing section */
 
+.carrot-cleaver {
+    height: auto;
+    margin-left: 1em;
+    margin-top: 3em;
+    width: 15em;
+}
+
 .landing-container .about-quote-copy {
     font-size: 3em;
 }
@@ -255,11 +262,7 @@ a:hover {
 }
 
 .about-quote-container {
-<<<<<<< HEAD
-    height: 25em;
-=======
     height: 22em;
->>>>>>> 242877b8a3e84457086d02b4d6202338cd359021
     margin-top: 4em;
     padding-left: 0.4em;
     padding-right: 0.4em;
@@ -279,36 +282,19 @@ a:hover {
     -webkit-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.75);
-<<<<<<< HEAD
-    height: 23em;
-    left: 25%;
-    width: 23em;
+    height: 21em;
+    width: 21em;
 }
 
 .about-quote-copy-container {
     background-color: rgba(255,255,255,0.8);
-    bottom: 2em;
-=======
-    height: 22em;
-    width: 22em;
-}
-
-.about-quote-copy-container {
-    background-color: #fff;
->>>>>>> 242877b8a3e84457086d02b4d6202338cd359021
     -webkit-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.75);
     font-size: 0.6em;
-<<<<<<< HEAD
-    left: 45%;
-    padding: 2em;
-    text-align: left;
-=======
     padding: 2em;
     text-align: left;
     top: 25em;
->>>>>>> 242877b8a3e84457086d02b4d6202338cd359021
     width: 35em;
 }
 
@@ -351,6 +337,13 @@ a:hover {
     position: relative;
 }
 
+.service-overlay-background {
+    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+
 .service-overlay {
     border: 0.6em solid #FFF;
     height: calc(100% - 2em);
@@ -362,36 +355,45 @@ a:hover {
     color: #FFF;
     font-size: 2em;
     font-weight: 800;
-    margin-bottom: 2em;
+    margin-bottom: 0.5em;
     margin-top: 1em;
     text-align: center;
     width: 100%;
 }
 
+.service p {
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
 .service-parties {
-    background-image: url(../img/gs-private.jpg);     
+    background-image: url(../img/gs-tbird.jpg);     
 }
 
 .service-popups {
-    background-image: url(../img/gs-popups.jpg);     
+    background-image: url(../img/gs-popups.png);     
 }
 
 .service-catering {
-    background-image: url(../img/gs-corp.jpg);     
+    background-image: url(../img/gs-catering.jpg);     
 }
 
 .service-menu {
-    background-color: #FFF;
+    background-color: rgba(255,255,255,0.9);
     border-radius: 0.2em;
+    color: #314A56;
     cursor: pointer;
     display: inline-block;
-    height: 7em;
+    font-family: 'Yeseva One', serif;
+    height: 8em;
     margin-bottom: 2em;
     margin-left: 1em;
     margin-right: 1em;
+    overflow: hidden;
     padding-top: 0.4em;
     transition-duration: 0.2s;
-    width: 5em;
+    width: 6em;
 }
 
 .services-content-container .cta-primary {
@@ -504,7 +506,7 @@ a:hover {
     }
 
     .about-quote-container {
-        height: 28em;
+        height: 24em;
     }
 
     .about-quote-container-odd .about-quote-image-container {
@@ -588,15 +590,19 @@ a:hover {
         margin-top: 4em;
     }
 
+    .carrot-cleaver {
+        width: 10em;
+    }
+
     .about-quote-image-container {
         height: 20em;
-        left: 8%;
+        left: 15%;
         width: 20em;
     }
 
     .about-quote-copy-container {
         font-size: 0.6em;
-        left: 45%;
+        left: 24%;
     }
 
     h1 {
@@ -626,15 +632,20 @@ a:hover {
         margin-top: 2em;
     }
 
+    .about-quote-container {
+        margin-top: 2em;
+    }
+
     .about-quote-image-container {
-        height: 15em;
-        left: 5%;
-        width: 15em;
+        height: 16em;
+        left: 12%;
+        width: 16em;
     }
 
     .about-quote-copy-container {
         font-size: 0.6em;
-        left: 29%;
+        left: 4%;
+        top: 21em;
     }
 
 }
