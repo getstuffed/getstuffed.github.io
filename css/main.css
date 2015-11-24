@@ -361,6 +361,12 @@ a:hover {
     width: 100%;
 }
 
+.service p {		
+    color: white;		
+    font-size: 1.2em;		
+    margin-bottom: 1.5em;		
+}
+
 .service-parties {
     background-image: url(../img/gs-tbird.jpg);     
 }
@@ -393,6 +399,7 @@ a:hover {
 .service-menu p {
    color: #314A56;
    font-size: 1em;
+   margin: 0 0 10px;
 }
 
 .carrot-cleaver-tiny {
