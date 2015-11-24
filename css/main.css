@@ -361,12 +361,6 @@ a:hover {
     width: 100%;
 }
 
-.service p {
-    color: white;
-    font-size: 1.2em;
-    margin-bottom: 1.5em;
-}
-
 .service-parties {
     background-image: url(../img/gs-tbird.jpg);     
 }
@@ -382,7 +376,6 @@ a:hover {
 .service-menu {
     background-color: rgba(255,255,255,0.9);
     border-radius: 0.2em;
-    color: #314A56;
     cursor: pointer;
     display: inline-block;
     font-family: 'Yeseva One', serif;
@@ -392,15 +385,22 @@ a:hover {
     margin-right: 1em;
     overflow: hidden;
     padding-top: 0.4em;
+    position: relative;
     transition-duration: 0.2s;
     width: 6em;
 }
 
+.service-menu p {
+   color: #314A56;
+   font-size: 1em;
+}
+
 .carrot-cleaver-tiny {
    height: auto;
-   width: 50%;
-   position: relative;
-   bottom: -5px;
+   width: 3.2em;
+   position: absolute;
+   bottom: 0.4em;
+   left: 1.5em;
 }
 
 .services-content-container .cta-primary {
