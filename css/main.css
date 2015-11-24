@@ -396,6 +396,13 @@ a:hover {
     width: 6em;
 }
 
+.carrot-cleaver-tiny {
+   height: auto;
+   width: 50%;
+   position: relative;
+   bottom: -5px;
+}
+
 .services-content-container .cta-primary {
     height: 3em;
     line-height: 3em;
