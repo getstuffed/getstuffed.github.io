@@ -99,7 +99,7 @@ textarea {
 
 body {
     background-image: url(../img/texturetastic_gray.png);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Quattrocento Sans', sans-serif;
     text-align: center;
 }
 
@@ -261,6 +261,11 @@ a:hover {
     background-size: cover;
 }
 
+.about-testimonial-container h1 {
+    font-size: 2.2em;
+    margin-top: 2em;
+}
+
 .about-quote-container {
     height: 22em;
     margin-top: 4em;
@@ -302,13 +307,13 @@ a:hover {
     border-left: 0.15em solid #395765;
     border-right: 0.15em solid #395765;
     color: #395765;
-    font-size: 2em;
-    font-weight: 500;
+    font-size: 2.2em;
+    font-weight: 800;
     margin: 0;
     padding-left: 1em;
     padding-right: 1em;
     text-transform: uppercase;
-    width: 15em;
+    width: 14em;
 }
 
 .about-quote-client {
@@ -381,36 +386,47 @@ a:hover {
 
 .service-menu {
     background-color: rgba(255,255,255,0.9);
-    border-radius: 0.2em;
     cursor: pointer;
     display: inline-block;
     font-family: 'Yeseva One', serif;
-    height: 8em;
+    height: 9em;
     margin-bottom: 2em;
     margin-left: 1em;
     margin-right: 1em;
     overflow: hidden;
-    padding-top: 0.4em;
+    padding: 0.4em;
+    padding-top: 1.8em;
     position: relative;
     transition-duration: 0.2s;
-    width: 6em;
+    width: 9em;
+    border-radius: 50%;
+    transition-duration: 0.2s;
+}
+
+.service-menu:hover {
+    margin-top: 0.3em;
+    margin-bottom: 1.7em;
 }
 
 .service-menu p {
-   color: #314A56;
-   font-size: 1em;
-   margin: 0 0 10px;
+    color: #2C3B42;
+    font-size: 1em;
+    position: absolute;
+    left: 1.4em;
+    width: 6em;
 }
 
 .carrot-cleaver-tiny {
-   height: auto;
-   width: 3.2em;
-   position: absolute;
-   bottom: 0.4em;
-   left: 1.5em;
+    height: auto;
+    width: 6.2em;
+    position: absolute;
+    bottom: 1.5em;
+    left: 1.8em;
 }
 
 .services-content-container .cta-primary {
+    font-family: 'Yeseva One';
+    font-size: 1.4em;
     height: 3em;
     line-height: 3em;
     margin: auto;

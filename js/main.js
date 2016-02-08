@@ -58,5 +58,18 @@ $(function() {
       limit: 60
   });
   feed.run();
+
+// Animate ctas
+var ctas = document.getElementsByClassName('cta-primary'),
+    addClass = function(){this.classList.add('animated','swing')},
+    removeClass = function(){this.classList.remove('animated','swing')};
+
+for (var i = ctas.length - 1; i >= 0; i--) {
+  if (ctas[i].parentNode.parentNode.classList[0] !== 'navigation-item') {
+    ctas[i].addEventListener('mouseenter', addClass, false);
+    ctas[i].addEventListener('mouseleave', removeClass, false);
+  }
+};
+
 })();
 
