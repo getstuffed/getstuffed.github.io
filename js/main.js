@@ -1,25 +1,15 @@
 
-// Navbar
-(function ($) {
-  $(document).ready(function(){
-
-    // hide .navbar first
-    $(".navigation-bar").hide();
-
-    // fade in .navbar
-    $(function () {
-        $(window).scroll(function () {
-            // set distance user needs to scroll before we start fadeIn
-            if ($(this).scrollTop() > 600) {
-                $('.navigation-bar').fadeIn();
-            } else {
-                $('.navigation-bar').fadeOut();
-            }
-        });
-    });
-
+// Navbar animation
+$(function () {
+  $(window).scroll(function () {
+      // set distance user needs to scroll before we start fadeIn
+      if ($(this).scrollTop() > 600) {
+          $('.navigation-bar').addClass('show');
+      } else {
+          $('.navigation-bar').removeClass('show');
+      }
+  });
 });
-  }(jQuery));
 
 // Smooth scroll navigation
 $(function() {
@@ -36,6 +26,48 @@ $(function() {
     }
   });
 });
+
+(function() {
+  var timeInterval = 2000; // milliseconds
+  var adjectives = [ 'charming', 'delicious', 'exciting', 'seasonal', 'wholesome' ];
+  var carousel = $('.adjective-carousel');
+  var carouselTray = $('.adjective-carousel-tray');
+
+  function addAdjective(adjective) {
+      var heading = document.createElement('h2');
+      heading.innerText = adjective;
+      carouselTray.append(heading);
+  }
+
+  function incrementTopPosition() {
+     var spacing = 75;
+     var prevPosition = carouselTray.position().top;
+     var nextPosition = prevPosition - spacing;
+     carouselTray.css('top', nextPosition + 'px' );
+  }
+
+  function changeWidth() {
+     var newWidth = carouselTray.children().last().css('width');
+     carousel.css('width', newWidth);
+  }
+
+  function goToNextAdjective(index) {
+
+    var adjective = adjectives[index];
+
+    addAdjective(adjective);
+    window.requestAnimationFrame(incrementTopPosition);
+    window.requestAnimationFrame(changeWidth);
+
+    var indexPlusOne = index + 1;
+    var nextIndex = adjectives[indexPlusOne] ? indexPlusOne : 0;
+
+    setTimeout(function() {goToNextAdjective(nextIndex)}, timeInterval);
+  }
+
+  $(document).ready(function() {setTimeout(function() {goToNextAdjective(1)}, timeInterval)});
+
+})();
 
 // Facebook feed
 (function(d, s, id) {
@@ -59,17 +91,11 @@ $(function() {
   });
   feed.run();
 
-// Animate ctas
-var ctas = document.getElementsByClassName('cta-primary'),
-    addClass = function(){this.classList.add('animated','swing')},
-    removeClass = function(){this.classList.remove('animated','swing')};
-
-for (var i = ctas.length - 1; i >= 0; i--) {
-  if (ctas[i].parentNode.parentNode.classList[0] !== 'navigation-item') {
-    ctas[i].addEventListener('mouseenter', addClass, false);
-    ctas[i].addEventListener('mouseleave', removeClass, false);
-  }
-};
-
 })();
 
+// Copywright date
+(function() {
+  var date = new Date();
+  var fullYear = date.getFullYear();
+  $('#copywright-date').text(fullYear);
+})()

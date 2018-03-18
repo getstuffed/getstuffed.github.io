@@ -11,7 +11,7 @@
    ========================================================================== */
 
 html {
-    color: #222;
+    color: #333;
     font-size: 1em;
     line-height: 1.4;
 }
@@ -98,33 +98,32 @@ textarea {
 /* Generic */
 
 body {
-    background-image: url(../img/texturetastic_gray.png);
-    font-family: 'Quattrocento Sans', sans-serif;
+    /*background-image: url(../img/natural-paper.png);*/
+    font-family: 'Anonymous Pro', sans-serif;
     text-align: center;
 }
 
 h1 {
-    color: #314A56;
-    font-family: 'Yeseva One', serif;
-    font-size: 5em;
+    font-family: 'Londrina Outline', cursive;
+    font-size: 4em;
     font-weight: 800;
     margin: 0;
     margin-bottom: 0.5em;
-    text-transform: lowercase;
 }
 
 p {
-    color: #000;
     font-size: 1.6em;
     margin: 0.8em auto;
     max-width: 600px;
 }
 
 a {
+    color: inherit;
     text-decoration: none !important;
 }
 
 a:hover {
+    color: unset;
     text-decoration: none !important;
 }
 
@@ -145,53 +144,121 @@ a:hover {
 }
 
 .cta-primary {
-    background-color: #E32B32;
+    background-color: #66ab76;
+    border-radius: 0.2em;
     color: #FFF;
     cursor: pointer;
     transition-duration: 0.2s;
 }
 
-.cta-primary:hover {
-    background-color: rgb(234, 46, 53);
-}
-
 .navigation-item {
-    color: #D7E3E8;
     cursor: pointer;
     display: inline-block;
-    font-family: 'Yeseva One', serif;
+    font-family: 'Londrina Outline', serif;
+    font-weight: 800;
     padding: 0;
     text-align: center;
     transition-duration: 0.2s;
 }
 
-.navigation-item:hover {
-    color: #FFF;
+/* Images floating around */
+
+.container-fluid > img.floaty-image {
+    position: absolute;
+    height: 30vh;
+    width: auto;
+    transform: rotate(30deg);
+}
+
+.container-fluid > img.floaty-image:nth-child(1) {
+    left: 10%;
+    top: 200px;
+}
+
+.container-fluid > img.floaty-image:nth-child(2) {
+    right: 10%;
+    top: 500px;
+}
+
+.container-fluid > img.floaty-image:nth-child(3) {
+    left: 10%;
+    top: 900px;
+}
+
+.container-fluid > img.floaty-image:nth-child(4) {
+    right: 10%;
+    top: 1000px;
+}
+
+.container-fluid > img.floaty-image:nth-child(5) {
+    left: 10%;
+    top: 1500px;
+}
+
+.container-fluid > img.floaty-image:nth-child(6) {
+    right: 10%;
+    top: 1800px;
+}
+
+.container-fluid > img.floaty-image:nth-child(7) {
+    left: 10%;
+    top: 2200px;
+}
+
+.container-fluid > img.floaty-image:nth-child(8) {
+    right: 10%;
+    top: 2600px;
+}
+
+.container-fluid > img.floaty-image:nth-child(9) {
+    left: 10%;
+    top: 3000px;
+}
+
+.container-fluid > img.floaty-image:nth-child(10) {
+    right: 10%;
+    top: 3400px;
+}
+
+.container-fluid > img.floaty-image:nth-child(11) {
+    left: 10%;
+    top: 3800px;
 }
 
 /* Nav bar */
 
 .navigation-bar {
-    background-color: rgba(57, 87, 101, 0.6);
-    display: none;
-    height: 3em;
+    background-color: #FFF;
+    box-shadow: 0px 0px 10px 1px #D8D8D8;
+    box-sizing: content-box;
+    height: 4em;
     line-height: 3em;
+    padding: 1em 2em;
     position: fixed;
     text-align: left;
-    width: 100%;
+    transform: translateY(-7em);
+    transition: .4s ease;
+    width: calc(100% - 4em);
     z-index: 1000;
+}
+
+.navigation-bar.show {
+    transform: translateY(0);
 }
 
 .navigation-logo {
     height: 100%;
+    padding-left: 0;
 }
 
 .navigation-logo img {
-    height: 60%;
+    height: 100%;
     width: auto;
 }
 
 .navigation-items-container {
+    font-size: 2em;
+    line-height: 2em;
     padding: 0;
 }
 
@@ -205,51 +272,71 @@ a:hover {
     width: 15em;
 }
 
-.landing-container .about-quote-copy {
-    font-size: 3em;
+.landing-container .landing-copy {
+    padding: 4em 0;
 }
 
-.landing-container .about-quote-client {
-    font-size: 1.5em;
-    margin-top: 0em;
+.landing-container .landing-copy h2 {
+    margin: 0;
+}
+
+.landing-container .landing-copy .adjective-carousel {
+    display: inline-block;
+    height: 1.5em;
+    margin: 0 -0.1em;
+    overflow-y: hidden;
+    position: relative;
+    transition: width .4s ease;
+    vertical-align: middle;
+    width: 127px;
+}
+
+.landing-container .landing-copy .adjective-carousel .adjective-carousel-tray {
+    font-family: 'Londrina Outline', serif;
+    font-weight: 800;
+    position: absolute;
+    text-align: center;
+    top: -1px;
+    transition: top .4s ease;
+    width: 100%;
+}
+
+.landing-container .landing-copy .adjective-carousel .adjective-carousel-tray h2 {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    display: inline-block;
 }
 
 .landing-container .navigation-item {
     font-size: 2.1em;
     margin: 0;
     text-align: center;
-    color: #395765;
-    margin-top: 1em;
+    margin-top: 0.6em;
     cursor: pointer;
     transition-duration: 0.2s;
 }
 
 .landing-container .cta-primary {
-    border-radius: 0.1em;
     height: 2em;
     line-height: 2em;
 }
 
-.landing-container .navigation-item:hover {
-    color: #74AFCA;
+.landing-container .cta-social-container img {
+    height: 7em;
+    padding: 2em 0.2em;
 }
 
 /* Hello section */
 
 .about-copy-names {
-    color: #E32B32;
-    font-family: 'Yeseva One';
+    color: #66ab76;
+    font-family: 'Londrina Outline';
     font-size: 3em;
     margin-top: 0.5em;
 }
 
 .about-hello-container a {
-    color: rgb(210, 35, 42);
-    transition-duration: 0.2s;
-}
-
-.about-hello-container a:hover {
-    color: rgb(234, 46, 53);
+    color: #66ab76;
 }
 
 .about-copy-container p {
@@ -262,7 +349,6 @@ a:hover {
 }
 
 .about-testimonial-container h1 {
-    font-size: 2.2em;
     margin-top: 2em;
 }
 
@@ -317,8 +403,8 @@ a:hover {
 }
 
 .about-quote-client {
-    color: #E32B32;
-    font-family: 'Yeseva One', serif;
+    color: #66ab76;
+    font-family: 'Londrina Outline', serif;
     font-size: 3em;
     line-height: 0.8em;
     margin: 0;
@@ -366,29 +452,29 @@ a:hover {
     width: 100%;
 }
 
-.service p {		
-    color: white;		
-    font-size: 1.2em;		
-    margin-bottom: 1.5em;		
+.service p {
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
 }
 
 .service-parties {
-    background-image: url(../img/gs-tbird.jpg);     
+    background-image: url(../img/gs-tbird.jpg);
 }
 
 .service-popups {
-    background-image: url(../img/gs-popups.png);     
+    background-image: url(../img/gs-popups.png);
 }
 
 .service-catering {
-    background-image: url(../img/gs-catering.jpg);     
+    background-image: url(../img/gs-catering.jpg);
 }
 
 .service-menu {
     background-color: rgba(255,255,255,0.9);
     cursor: pointer;
     display: inline-block;
-    font-family: 'Yeseva One', serif;
+    font-family: 'Londrina Outline', serif;
     height: 9em;
     margin-bottom: 2em;
     margin-left: 1em;
@@ -425,7 +511,7 @@ a:hover {
 }
 
 .services-content-container .cta-primary {
-    font-family: 'Yeseva One';
+    font-family: 'Londrina Outline';
     font-size: 1.4em;
     height: 3em;
     line-height: 3em;
@@ -511,12 +597,12 @@ a:hover {
 /* Footer */
 
 .footer {
-    background-color: rgba(57, 87, 101, 0.6);
+    background-color: #333;
     color: white;
 }
 
 
-/* RESPONSIVE */ 
+/* RESPONSIVE */
 
 /* make food images more dominant on larger screens*/
 
